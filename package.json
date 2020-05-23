@@ -1,0 +1,25 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "알고리즘 공부용",
+  "main": "${file}",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "7.9.6",
+    "babel-jest": "26.0.1",
+    "jest": "26.0.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yahma25/algorithm.git"
+  },
+  "author": "mhkim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yahma25/algorithm/issues"
+  },
+  "homepage": "https://github.com/yahma25/algorithm#readme"
+}
