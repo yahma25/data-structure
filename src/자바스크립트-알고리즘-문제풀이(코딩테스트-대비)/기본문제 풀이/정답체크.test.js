@@ -1,8 +1,17 @@
 import { 세수중최솟값, 세수중최솟값_Math_Min } from "./세수중최솟값";
+import { 삼각형판별하기, 삼각형판별하기_math_max } from "./삼각형판별하기";
 
 describe("섹션 1 결과 확인", () => {
   test("세수중최솟값", () => {
     expect(세수중최솟값(6, 5, 11)).toBe(5);
     expect(세수중최솟값_Math_Min(6, 5, 11)).toBe(5);
+  });
+
+  test("삼각형판별하기", () => {
+    expect(삼각형판별하기(6, 7, 11)).toBe("YES");
+    expect(삼각형판별하기(13, 33, 17)).toBe("NO");
+
+    expect(삼각형판별하기_math_max(6, 7, 11)).toBe("YES");
+    expect(삼각형판별하기_math_max(13, 33, 17)).toBe("NO");
   });
 });
