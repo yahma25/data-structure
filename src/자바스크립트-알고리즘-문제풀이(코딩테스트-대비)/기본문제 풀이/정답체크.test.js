@@ -7,6 +7,7 @@ import { solution_홀수, solution_홀수_built_in_function } from './홀수';
 import { solution_10부제 } from './10부제';
 import { solution_일곱난쟁이 } from './일곱난쟁이';
 import { solution_A를해시태그로, solution_A를해시태그로_replace_정규식 } from './A를해시태그로';
+import { solution_문자찾기, solution_문자찾기_split } from './문자찾기';
 
 describe('섹션 1 결과 확인', () => {
   test('세수중최솟값', () => {
@@ -56,5 +57,10 @@ describe('섹션 1 결과 확인', () => {
   test('solution_A를해시태그로', () => {
     expect(solution_A를해시태그로('BANANA')).toBe('B#N#N#');
     expect(solution_A를해시태그로_replace_정규식('BANANA')).toBe('B#N#N#');
+  });
+
+  test('문자찾기', () => {
+    expect(solution_문자찾기('COMPUTERPROGRAMMING', 'R')).toBe(3);
+    expect(solution_문자찾기_split('COMPUTERPROGRAMMING', 'R')).toBe(3);
   });
 });
