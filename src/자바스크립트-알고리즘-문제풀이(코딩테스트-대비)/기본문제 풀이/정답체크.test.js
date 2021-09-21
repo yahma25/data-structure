@@ -12,6 +12,7 @@ import { solution_대문자찾기, solution_대문자찾기_uppercase } from './
 import { solution_대문자로통일, solution_대문자로통일_charCode } from './대문자로통일';
 import { solution_대소문자변환 } from './대소문자변환';
 import { solution_가장긴문자열 } from './가장긴문자열';
+import { solution_가운데문자출력, solution_가운데문자출력_substr } from './가운데문자출력';
 
 describe('섹션 1 결과 확인', () => {
   test('세수중최솟값', () => {
@@ -86,5 +87,13 @@ describe('섹션 1 결과 확인', () => {
     expect(solution_가장긴문자열(5, ['teacher', 'time', 'student', 'beautiful', 'good'])).toBe(
       'beautiful'
     );
+  });
+
+  test('가운데문자출력', () => {
+    expect(solution_가운데문자출력('study')).toBe('u');
+    expect(solution_가운데문자출력('good')).toBe('oo');
+
+    expect(solution_가운데문자출력_substr('study')).toBe('u');
+    expect(solution_가운데문자출력_substr('good')).toBe('oo');
   });
 });
