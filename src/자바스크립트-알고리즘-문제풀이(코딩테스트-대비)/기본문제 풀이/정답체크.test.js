@@ -4,6 +4,7 @@ import { 연필개수 } from './연필개수';
 import { solution_1부터N까지합출력하기 } from './1부터N까지합출력하기';
 import { solution_최솟값구하기, solution_최솟값구하기_math_min } from './최솟값구하기';
 import { solution_홀수, solution_홀수_built_in_function } from './홀수';
+import { solution_10부제 } from './10부제';
 
 describe('섹션 1 결과 확인', () => {
   test('세수중최솟값', () => {
@@ -37,5 +38,10 @@ describe('섹션 1 결과 확인', () => {
   test('홀수', () => {
     expect(solution_홀수([12, 77, 38, 41, 53, 92, 85])).toStrictEqual([256, 41]);
     expect(solution_홀수_built_in_function([12, 77, 38, 41, 53, 92, 85])).toStrictEqual([256, 41]);
+  });
+
+  test('10부제', () => {
+    expect(solution_10부제(3, [25, 23, 11, 47, 53, 17, 33])).toBe(3);
+    expect(solution_10부제(0, [12, 20, 54, 30, 87, 91, 30])).toBe(3);
   });
 });
