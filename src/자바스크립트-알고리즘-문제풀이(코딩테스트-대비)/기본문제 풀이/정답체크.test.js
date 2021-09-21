@@ -11,6 +11,7 @@ import { solution_문자찾기, solution_문자찾기_split } from './문자찾�
 import { solution_대문자찾기, solution_대문자찾기_uppercase } from './대문자찾기';
 import { solution_대문자로통일, solution_대문자로통일_charCode } from './대문자로통일';
 import { solution_대소문자변환 } from './대소문자변환';
+import { solution_가장긴문자열 } from './가장긴문자열';
 
 describe('섹션 1 결과 확인', () => {
   test('세수중최솟값', () => {
@@ -79,5 +80,11 @@ describe('섹션 1 결과 확인', () => {
 
   test('solution_대소문자변환', () => {
     expect(solution_대소문자변환('StuDY')).toBe('sTUdy');
+  });
+
+  test('가장긴문자열', () => {
+    expect(solution_가장긴문자열(5, ['teacher', 'time', 'student', 'beautiful', 'good'])).toBe(
+      'beautiful'
+    );
   });
 });
