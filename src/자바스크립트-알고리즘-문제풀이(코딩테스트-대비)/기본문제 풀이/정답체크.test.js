@@ -14,6 +14,7 @@ import { solution_대소문자변환 } from './대소문자변환';
 import { solution_가장긴문자열 } from './가장긴문자열';
 import { solution_가운데문자출력, solution_가운데문자출력_substr } from './가운데문자출력';
 import { solution_중복문자제거, solution_중복문자제거_set } from './중복문자제거';
+import { solution_중복단어체크 } from './중복단어체크';
 
 describe('섹션 1 결과 확인', () => {
   test('세수중최솟값', () => {
@@ -101,5 +102,13 @@ describe('섹션 1 결과 확인', () => {
   test('중복문자제거', () => {
     expect(solution_중복문자제거('ksekkset')).toBe('kset');
     expect(solution_중복문자제거_set('ksekkset')).toBe('kset');
+  });
+
+  test('중복단어체크', () => {
+    expect(solution_중복단어체크(['good', 'time', 'good', 'time', 'student'])).toStrictEqual([
+      'good',
+      'time',
+      'student',
+    ]);
   });
 });
