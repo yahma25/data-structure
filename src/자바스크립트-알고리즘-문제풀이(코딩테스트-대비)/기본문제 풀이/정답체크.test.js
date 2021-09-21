@@ -78,7 +78,7 @@ describe('섹션 1 결과 확인', () => {
     expect(solution_대문자로통일_charCode('ItisTimeToStudy')).toBe('ITISTIMETOSTUDY');
   });
 
-  test('solution_대소문자변환', () => {
+  test('대소문자변환', () => {
     expect(solution_대소문자변환('StuDY')).toBe('sTUdy');
   });
 
