@@ -4,6 +4,7 @@ import { solution_가위바위보, solution_가위바위보_subtraction } from '
 import { solution_점수계산 } from './4.점수계산';
 import { solution_등수구하기, solution_등수구하기_sort } from './5.등수구하기';
 import { solution_격자판최대합 } from './6.격자판최대합';
+import { solution_봉우리 } from './7.봉우리';
 
 describe('섹션 2 결과 확인', () => {
   test('큰수출력하기', () => {
@@ -52,5 +53,17 @@ describe('섹션 2 결과 확인', () => {
         [19, 13, 30, 13, 19],
       ])
     ).toBe(155);
+  });
+
+  test('봉우리', () => {
+    expect(
+      solution_봉우리([
+        [5, 3, 7, 2, 3],
+        [3, 7, 1, 6, 1],
+        [7, 2, 5, 3, 4],
+        [4, 3, 6, 4, 1],
+        [8, 7, 3, 5, 2],
+      ])
+    ).toBe(10);
   });
 });
