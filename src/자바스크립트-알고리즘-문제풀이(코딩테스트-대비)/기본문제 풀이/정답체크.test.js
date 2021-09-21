@@ -54,7 +54,7 @@ describe('섹션 1 결과 확인', () => {
     ]);
   });
 
-  test('solution_A를해시태그로', () => {
+  test('A를해시태그로', () => {
     expect(solution_A를해시태그로('BANANA')).toBe('B#N#N#');
     expect(solution_A를해시태그로_replace_정규식('BANANA')).toBe('B#N#N#');
   });
