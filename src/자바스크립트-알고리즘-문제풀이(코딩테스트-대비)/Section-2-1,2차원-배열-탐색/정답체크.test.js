@@ -1,6 +1,7 @@
 import { solution_큰수출력하기, solution_큰수출력하기_math_max } from './1.큰수출력하기';
 import { solution_보이는학생, solution_보이는학생_reduce } from './2.보이는학생';
 import { solution_가위바위보, solution_가위바위보_subtraction } from './3.가위바위보';
+import { solution_점수계산 } from './4.점수계산';
 
 describe('섹션 2 결과 확인', () => {
   test('큰수출력하기', () => {
@@ -28,5 +29,9 @@ describe('섹션 2 결과 확인', () => {
       'B',
       'D',
     ]);
+  });
+
+  test('점수계산', () => {
+    expect(solution_점수계산([1, 0, 1, 1, 1, 0, 0, 1, 1, 0])).toBe(10);
   });
 });
