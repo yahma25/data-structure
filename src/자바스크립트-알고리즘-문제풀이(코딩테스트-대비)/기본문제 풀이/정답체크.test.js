@@ -6,6 +6,7 @@ import { solution_최솟값구하기, solution_최솟값구하기_math_min } fro
 import { solution_홀수, solution_홀수_built_in_function } from './홀수';
 import { solution_10부제 } from './10부제';
 import { solution_일곱난쟁이 } from './일곱난쟁이';
+import { solution_A를해시태그로, solution_A를해시태그로_replace_정규식 } from './A를해시태그로';
 
 describe('섹션 1 결과 확인', () => {
   test('세수중최솟값', () => {
@@ -50,5 +51,10 @@ describe('섹션 1 결과 확인', () => {
     expect(solution_일곱난쟁이([20, 7, 23, 19, 10, 15, 25, 8, 13])).toStrictEqual([
       20, 7, 23, 19, 10, 8, 13,
     ]);
+  });
+
+  test('solution_A를해시태그로', () => {
+    expect(solution_A를해시태그로('BANANA')).toBe('B#N#N#');
+    expect(solution_A를해시태그로_replace_정규식('BANANA')).toBe('B#N#N#');
   });
 });
