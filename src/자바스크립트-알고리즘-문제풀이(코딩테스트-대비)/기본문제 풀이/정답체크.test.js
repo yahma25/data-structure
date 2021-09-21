@@ -10,6 +10,7 @@ import { solution_A를해시태그로, solution_A를해시태그로_replace_정�
 import { solution_문자찾기, solution_문자찾기_split } from './문자찾기';
 import { solution_대문자찾기, solution_대문자찾기_uppercase } from './대문자찾기';
 import { solution_대문자로통일, solution_대문자로통일_charCode } from './대문자로통일';
+import { solution_대소문자변환 } from './대소문자변환';
 
 describe('섹션 1 결과 확인', () => {
   test('세수중최솟값', () => {
@@ -74,5 +75,9 @@ describe('섹션 1 결과 확인', () => {
   test('대문자로통일', () => {
     expect(solution_대문자로통일('ItisTimeToStudy')).toBe('ITISTIMETOSTUDY');
     expect(solution_대문자로통일_charCode('ItisTimeToStudy')).toBe('ITISTIMETOSTUDY');
+  });
+
+  test('solution_대소문자변환', () => {
+    expect(solution_대소문자변환('StuDY')).toBe('sTUdy');
   });
 });
