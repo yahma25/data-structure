@@ -6,6 +6,7 @@ import {
 import { solution_뒤집은소수, solution_뒤집은소수_Eratosthenes } from './2.뒤집은소수';
 import { solution_멘토링_my_thinking } from './3.멘토링';
 import { solution_졸업선물 } from './4.졸업선물';
+import { solution_k번째큰수 } from './5.K번째큰수';
 
 describe('섹션 4 결과 확인', () => {
   test('자릿수의합', () => {
@@ -43,5 +44,9 @@ describe('섹션 4 결과 확인', () => {
         [10, 3],
       ])
     ).toBe(4);
+  });
+
+  test('k번째큰수', () => {
+    expect(solution_k번째큰수(10, 3, [13, 15, 34, 23, 45, 65, 33, 11, 26, 42])).toBe(143);
   });
 });
