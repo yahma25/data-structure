@@ -1,0 +1,52 @@
+import {
+  solution_자릿수의합,
+  solution_자릿수의합_my_thinking,
+  solution_자릿수의합_my_thinking_2,
+} from './1.자릿수의합';
+import { solution_뒤집은소수, solution_뒤집은소수_Eratosthenes } from './2.뒤집은소수';
+import { solution_멘토링_my_thinking } from './3.멘토링';
+import { solution_졸업선물 } from './4.졸업선물';
+import { solution_k번째큰수 } from './5.K번째큰수';
+
+describe('섹션 4 결과 확인', () => {
+  test('자릿수의합', () => {
+    expect(solution_자릿수의합([128, 460, 603, 40, 521, 137, 123])).toBe(137);
+    expect(solution_자릿수의합_my_thinking([128, 460, 603, 40, 521, 137, 123])).toBe(137);
+    expect(solution_자릿수의합_my_thinking_2([128, 460, 603, 40, 521, 137, 123])).toBe(137);
+  });
+
+  test('뒤집은소수', () => {
+    expect(solution_뒤집은소수([32, 55, 62, 20, 250, 370, 200, 30, 100])).toStrictEqual([
+      23, 2, 73, 2, 3,
+    ]);
+    expect(
+      solution_뒤집은소수_Eratosthenes([32, 55, 62, 20, 250, 370, 200, 30, 100])
+    ).toStrictEqual([23, 2, 73, 2, 3]);
+  });
+
+  test('멘토링', () => {
+    expect(
+      solution_멘토링_my_thinking([
+        [3, 4, 1, 2],
+        [4, 3, 2, 1],
+        [3, 1, 4, 2],
+      ])
+    ).toBe(3);
+  });
+
+  test('졸업선물', () => {
+    expect(
+      solution_졸업선물(28, [
+        [6, 6],
+        [2, 2],
+        [4, 3],
+        [4, 5],
+        [10, 3],
+      ])
+    ).toBe(4);
+  });
+
+  test('k번째큰수', () => {
+    expect(solution_k번째큰수(10, 3, [13, 15, 34, 23, 45, 65, 33, 11, 26, 42])).toBe(143);
+  });
+});
