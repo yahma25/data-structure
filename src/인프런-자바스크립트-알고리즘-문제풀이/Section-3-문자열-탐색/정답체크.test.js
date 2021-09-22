@@ -5,6 +5,7 @@ import {
   solution_가장짧은문자거리,
   solution_가장짧은문자거리_my_thinking,
 } from './4.가장짧은문자거리';
+import { solution_문자열압축, solution_문자열압축_my_thinking } from './5.문자열압축';
 
 describe('섹션 3 결과 확인', () => {
   test('회문문자열', () => {
@@ -46,5 +47,10 @@ describe('섹션 3 결과 확인', () => {
     expect(solution_가장짧은문자거리_my_thinking('etachermode', 'e')).toStrictEqual([
       0, 1, 2, 2, 1, 0, 1, 2, 2, 1, 0,
     ]);
+  });
+
+  test('문자열압축', () => {
+    expect(solution_문자열압축('KKHSSSSSSSE')).toBe('K2HS7E');
+    expect(solution_문자열압축_my_thinking('KKHSSSSSSSE')).toBe('K2HS7E');
   });
 });
