@@ -5,6 +5,7 @@ import {
 } from './1.자릿수의합';
 import { solution_뒤집은소수, solution_뒤집은소수_Eratosthenes } from './2.뒤집은소수';
 import { solution_멘토링_my_thinking } from './3.멘토링';
+import { solution_졸업선물 } from './4.졸업선물';
 
 describe('섹션 4 결과 확인', () => {
   test('자릿수의합', () => {
@@ -30,5 +31,17 @@ describe('섹션 4 결과 확인', () => {
         [3, 1, 4, 2],
       ])
     ).toBe(3);
+  });
+
+  test('졸업선물', () => {
+    expect(
+      solution_졸업선물(28, [
+        [6, 6],
+        [2, 2],
+        [4, 3],
+        [4, 5],
+        [10, 3],
+      ])
+    ).toBe(4);
   });
 });
