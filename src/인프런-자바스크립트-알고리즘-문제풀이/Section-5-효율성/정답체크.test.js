@@ -1,4 +1,5 @@
 import { solution_두배열합치기 } from './1.두배열합치기';
+import { solution_공통원소구하기 } from './2.공통원소구하기';
 
 describe('섹션 5 결과 확인', () => {
   test('두배열합치기', () => {
@@ -11,5 +12,9 @@ describe('섹션 5 결과 확인', () => {
     expect(solution_두배열합치기([5, 6, 7, 8, 9], [1, 2, 3, 4, 5])).toStrictEqual([
       1, 2, 3, 4, 5, 5, 6, 7, 8, 9,
     ]);
+  });
+
+  test('공통원소구하기', () => {
+    expect(solution_공통원소구하기([1, 3, 9, 5, 2, 11], [3, 2, 5, 7, 8])).toStrictEqual([2, 3, 5]);
   });
 });
