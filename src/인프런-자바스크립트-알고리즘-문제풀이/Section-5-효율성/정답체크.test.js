@@ -5,6 +5,7 @@ import { solution_연속부분수열2, solution_연속부분수열2_one_while } 
 import { solution_최대매출 } from './5.최대매출';
 import { solution_학급회장 } from './6.학급회장(해쉬)';
 import { solution_아나그램, solution_아나그램_another } from './7.아나그램';
+import { solution_모든아나그램, solution_모든아나그램_two_pointer } from './8.모든아나그램';
 
 describe('섹션 5 결과 확인', () => {
   test('두배열합치기', () => {
@@ -46,5 +47,10 @@ describe('섹션 5 결과 확인', () => {
     expect(solution_아나그램('AbaAeCe', 'baeeACA')).toBe('YES');
     expect(solution_아나그램('abaCC', 'Caaab')).toBe('NO');
     expect(solution_아나그램('AABBCC', 'EEFFGG')).toBe('NO');
+  });
+
+  test('모든아나그램', () => {
+    expect(solution_모든아나그램('bacaAacba', 'abc')).toBe(3);
+    expect(solution_모든아나그램_two_pointer('bacaAacba', 'abc')).toBe(3);
   });
 });
