@@ -4,6 +4,7 @@ import { solution_연속부분수열1 } from './3.연속부분수열1';
 import { solution_연속부분수열2, solution_연속부분수열2_one_while } from './4.연속부분수열2';
 import { solution_최대매출 } from './5.최대매출';
 import { solution_학급회장 } from './6.학급회장(해쉬)';
+import { solution_아나그램, solution_아나그램_another } from './7.아나그램';
 
 describe('섹션 5 결과 확인', () => {
   test('두배열합치기', () => {
@@ -39,5 +40,11 @@ describe('섹션 5 결과 확인', () => {
 
   test('학급회장', () => {
     expect(solution_학급회장('BACBACCACCBDEDE')).toBe('C');
+  });
+
+  test('아나그램', () => {
+    expect(solution_아나그램('AbaAeCe', 'baeeACA')).toBe('YES');
+    expect(solution_아나그램('abaCC', 'Caaab')).toBe('NO');
+    expect(solution_아나그램('AABBCC', 'EEFFGG')).toBe('NO');
   });
 });
