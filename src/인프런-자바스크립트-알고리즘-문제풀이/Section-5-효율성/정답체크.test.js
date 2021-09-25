@@ -4,7 +4,7 @@ import { solution_연속부분수열1 } from './3.연속부분수열1';
 import { solution_연속부분수열2, solution_연속부분수열2_one_while } from './4.연속부분수열2';
 import { solution_최대매출 } from './5.최대매출';
 import { solution_학급회장 } from './6.학급회장(해쉬)';
-import { solution_아나그램, solution_아나그램_another } from './7.아나그램';
+import { solution_아나그램 } from './7.아나그램';
 import { solution_모든아나그램, solution_모든아나그램_two_pointer } from './8.모든아나그램';
 
 describe('섹션 5 결과 확인', () => {
